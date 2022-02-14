@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./script/main.js" type="module"></script>
+    <title>Controlador de gastos</title>
+</head>
+
+<body>
+    <section>
+        <div>
+            <div>
+                <h1>Gestor de gastos</h1>
+                <h2>Cartera principal</h2>
+            </div>
+            <div id="balanceAmount">0€</div>
+            <div>
+                <h3>Historial</h3>
+                <div id="recordsContainer">
+                </div>
+            </div>
+            <div>
+                <h3>Nueva entrada</h3>
+                <form>
+                    <input type="text" name="entry-name" id="entryName" placeholder="Introduce un concepto">
+                    <input type="number" name="entry-amount" id="entryAmount" placeholder="Introduce una cantidad">
+                </form>
+                <div>
+                    <button id="addIncomeButton">Añadir ingreso</button>
+                    <button id="addExpenseButton">Añadir gasto</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+body {
+    background: #dddddd;
+    color: white;
+    font-family: sans-serif, Arial, Helvetica;
+    padding: 0px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background-color: #111111;
+    width: 360px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.record{
+    background-color: black;
+    padding: 5px;
+}
+
+#recordsContainer div{
+    background-color: #333333;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+}
+
+
+
+.deleteButton{
+        background-color: red;
+        width: 60px;
+        height: 30px;
+        color: white;
+        border: 0;
+        outline: 0;
+        border-radius: 3px;
+        margin: 10px;
+}
+
+
+input{
+    display: block;
+    margin: 0 auto;
+    padding: 12px;
+    margin-block-start: 10px;
+    border-radius: 5px;
+    background: #F6F7F9;
+    color: #454545;
+    width: 330px;
+    opacity: 4;
+    outline: 0;
+    border-color: transparent;
+}
+
+#addIncomeButton{
+    background-color: green;
+    width: 175px;
+    height: 40px;
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#addExpenseButton{
+    background-color: red;
+    width: 175px;
+    height: 40px;
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#addIncomeButton:hover{
+    background: linear-gradient(90deg, #67f669 10%, #00bd2c 90%);
+}
+
+#addExpenseButton:hover, .deleteButton:hover{
+    background: linear-gradient(90deg, rgba(155,2,2,1) 0%, rgba(255,33,33,1) 100%);
+}
+
+.addButton{
+    width: 150px;
+    height: 30px;
+    border-radius: 2px;
+}

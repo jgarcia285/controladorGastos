@@ -4,36 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="./script/main.js" type="module"></script>
+    <script src="./scripts/main.js" type="module" defer></script>
     <title>Controlador de gastos</title>
 </head>
 
 <body>
     <section>
-        <div>
-            <div>
+        <div class="container">
                 <h1>Gestor de gastos</h1>
-                <h2>Cartera principal</h2>
-            </div>
+                <h3>Cartera</h3>
             <div id="balanceAmount">0€</div>
-            <div>
+            <div class="record">
                 <h3>Historial</h3>
-                <div id="recordsContainer">
-                </div>
+                <div id="recordsContainer"></div>
             </div>
             <div>
                 <h3>Nueva entrada</h3>
                 <form>
-                    <input type="text" name="entry-name" id="entryName" placeholder="Introduce un concepto">
-                    <input type="number" name="entry-amount" id="entryAmount" placeholder="Introduce una cantidad">
+                    <input type="text" name="entryName" id="entryName" placeholder="Introduce un concepto">
+                    <input type="number" name="entryAmount" id="entryAmount" placeholder="Introduce una cantidad">
                 </form>
                 <div>
-                    <button id="addIncomeButton">Añadir ingreso</button>
-                    <button id="addExpenseButton">Añadir gasto</button>
+                    <button class="addButton" id="addIncomeButton">Añadir ingreso</button>
+                    <button class="addButton" id="addExpenseButton">Añadir gasto</button>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- TEMPLATE -->
+    <template id="entryTemplate">
+        <div data-id="1">
+            <p class="entryConcept">Nombre de entrada...</p>
+            <p class="entryAmount">Cantidad en €</p>
+            <button class="deleteButton">Eliminar</button>
+        </div>
+    </template>
 
 </body>
 
